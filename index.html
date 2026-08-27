@@ -362,3 +362,19 @@
         window.addComment = function(threadId) {
             const user = document.getElementById('globalUser').value.trim() || 'Anonimo';
             const input =
+<script>
+        function switchTab(tabId, btn) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('nav button').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        function toggleCreateBox() {
+            const box = document.getElementById('createBox');
+            box.style.display = box.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
